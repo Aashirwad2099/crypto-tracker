@@ -38,3 +38,5 @@ PORT=5000
 cd ../frontend
 npm install
 npm start
+for shorting click on the Header section eg.Coin Name,Symbol,Price,(USD),Market,Cap	etc.. 
+single click for asc order double click for desc order
