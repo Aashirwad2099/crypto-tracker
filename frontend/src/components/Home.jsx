@@ -6,6 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CoinChart from './CoinChart';
+import { apiEndpoint } from '../smallapi';
 
 const Home = () => {
   const [coins, setCoins] = useState([]);
@@ -21,7 +22,7 @@ const Home = () => {
 
   const fetchCoins = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/coins');
+      const response = await axios.get(`${apiEndpoint}/api/coins`);
       console.log('Fetched coins:', response.data);
       setCoins(response.data);
       setLoading(false);
@@ -82,7 +83,7 @@ const Home = () => {
       setChartLoading(true);
       setChartError(null);
       try {
-        const response = await axios.get(`http://localhost:5000/api/history/${selectedCoinId}`);
+        const response = await axios.get(`${apiEndpoint}/api/history/${selectedCoinId}`);
         setHistoricalData(response.data);
         console.log('Fetched historical data:', response.data);
         setChartLoading(false);

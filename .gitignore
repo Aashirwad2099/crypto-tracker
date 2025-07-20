@@ -1,0 +1,51 @@
+# === Node.js (Backend & Frontend) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Logs ===
+logs/
+*.log
+*.log.*
+
+# === Environment Variables ===
+.env
+.env.*    # for .env.development, .env.production, etc.
+
+# === Build Output ===
+dist/
+build/
+out/
+
+# === OS/System Files ===
+.DS_Store
+Thumbs.db
+
+# === IDEs/Editors ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# === Coverage Reports ===
+coverage/
+*.lcov
+
+# === Next.js/.nuxt/.sveltekit (if using frameworks) ===
+.next/
+.nuxt/
+.svelte-kit/
+
+# === Backend Specific (if using Python, Django, etc.) ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === Misc ===
+*.swp
+*.bak
